@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://fb5rn2gm7nnt" path="res://scenes/flood.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://du2g430hqsqag" path="res://scenes/player.tscn" id="2_rwgxs"]
+[ext_resource type="PackedScene" uid="uid://dfim6n1m6qciq" path="res://scenes/death_wall.tscn" id="3_4wyf3"]
 
 [node name="World" type="Node2D" unique_id=695999303]
 
@@ -21,4 +22,6 @@ position = Vector2(451, 431)
 position = Vector2(580, 431)
 
 [node name="Player" parent="." unique_id=203130167 instance=ExtResource("2_rwgxs")]
-position = Vector2(137, 177)
+position = Vector2(177, 218)
+
+[node name="DeathWall" parent="." unique_id=715483078 instance=ExtResource("3_4wyf3")]
