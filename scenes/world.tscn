@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dd8yjoo5ph6h4"]
+
+[ext_resource type="PackedScene" uid="uid://fb5rn2gm7nnt" path="res://scenes/flood.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://du2g430hqsqag" path="res://scenes/player.tscn" id="2_rwgxs"]
+
+[node name="World" type="Node2D" unique_id=695999303]
+
+[node name="Flood" parent="." unique_id=206984713 instance=ExtResource("1_nnsk1")]
+position = Vector2(64, 431)
+
+[node name="Flood2" parent="." unique_id=1326636026 instance=ExtResource("1_nnsk1")]
+position = Vector2(193, 431)
+
+[node name="Flood3" parent="." unique_id=476561152 instance=ExtResource("1_nnsk1")]
+position = Vector2(322, 431)
+
+[node name="Flood4" parent="." unique_id=1183065055 instance=ExtResource("1_nnsk1")]
+position = Vector2(451, 431)
+
+[node name="Flood5" parent="." unique_id=1286534691 instance=ExtResource("1_nnsk1")]
+position = Vector2(580, 431)
+
+[node name="Player" parent="." unique_id=203130167 instance=ExtResource("2_rwgxs")]
+position = Vector2(137, 177)
