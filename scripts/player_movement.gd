@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+const SPEED = 1000.0
+const JUMP_VELOCITY = -800.0
 
 func death() -> void:
 	get_tree().reload_current_scene()
