@@ -3,6 +3,7 @@ extends CharacterBody2D
 
 const SPEED = 1000.0
 const JUMP_VELOCITY = -800.0
+const VELOCITY_RUN = 0.5
 
 func death() -> void:
 	get_tree().reload_current_scene()
@@ -16,7 +17,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	var direction := Input.get_axis("left", "right")
+	var direction := VELOCITY_RUN
 	if direction:
 		velocity.x = direction * SPEED
 	else:
