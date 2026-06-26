@@ -1,0 +1,10 @@
+Player: https://bndage.itch.io/16x16-noise-ferret
+Monstro: https://immortal-burrito.itch.io/blood-demons
+Ambiente: https://hugues-laborde.itch.io/pixel-art-pack-side-scroller-2
+Música: https://davidkbd.itch.io/code-injection-dark-techno-music-pack
+SFX: https://vladislavzh.itch.io/glitch-noises
+UI: https://pknm.itch.io/ui-buttons-sound-effects-pack
+Fonte: https://ggbot.itch.io/glitch-goblin-font
+Shader: https://orix-studio.itch.io/digital-glitch
+Obstáculos: https://sakpix.itch.io/cyberpunk-pixel-art-asset-pack
+UI visual: https://escape-pixel.itch.io/shadow-series-pixel-game-ui

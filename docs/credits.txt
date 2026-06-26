@@ -1,0 +1,136 @@
+
+THE GLITCHROOMS
+Credits
+
+A game made for a 2-day Game Jam.
+Theme: Glitch!
+Engine: Godot
+Programming Language: GDScript
+
+====================
+TEAM
+====
+
+Game Design:
+
+* [Team member name]
+
+Programming:
+
+* [Team member name]
+
+Level Design:
+
+* [Team member name]
+
+Art / Visual Design:
+
+* [Team member name]
+
+Audio / Sound Design:
+
+* [Team member name]
+
+Production / GitHub / Build:
+
+* [Team member name]
+
+====================
+THIRD-PARTY ASSETS
+==================
+
+## Player Character
+
+16x16 Noise Ferret
+Author: Bandage
+Source: https://bndage.itch.io/16x16-noise-ferret
+License / Usage Notes: Free to use anywhere. Credit not required, but included here with thanks.
+
+## Monster
+
+Blood Demons
+Author: Burrito
+Source: https://immortal-burrito.itch.io/blood-demons
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Usage Notes: Used and/or modified for the glitch monster/entity.
+
+## Environment Art
+
+Pixel Art Pack Side Scroller 2
+Author: hugues laborde
+Source: https://hugues-laborde.itch.io/pixel-art-pack-side-scroller-2
+License / Usage Notes: Can be used in commercial and non-commercial projects.
+
+## Obstacles / Props / Cyberpunk Elements
+
+Cyberpunk Pixel Art Asset Pack – 1000+ Modular Top-Down Sci-Fi Assets
+Author: SakPix
+Source: https://sakpix.itch.io/cyberpunk-pixel-art-asset-pack
+License / Usage Notes: Author states in the itch.io comments that the packs are free for commercial use and may be used in personal and commercial projects.
+AI Disclosure: The itch.io page lists this pack as AI Assisted / Graphics.
+
+## Music
+
+Code Injection Dark Techno Music Pack
+Author: David KBD
+Source: https://davidkbd.itch.io/code-injection-dark-techno-music-pack
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Usage Notes: Music used for the rhythm runner / glitch atmosphere.
+
+## Sound Effects
+
+Glitch Noises
+Author: Vladislav Zharkov
+Source: https://vladislavzh.itch.io/glitch-noises
+License: Creative Commons Zero 1.0 Universal (CC0)
+Usage Notes: Used for glitch, corruption, digital noise, UI and impact effects.
+
+## UI Sound Effects
+
+UI buttons | Sound effects pack + GLITCHES
+Author: pknm
+Source: https://pknm.itch.io/ui-buttons-sound-effects-pack
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+Usage Notes: Used for menu, button and interface sound effects.
+
+## Font
+
+Glitch Goblin - Free Font
+Author: GGBotNet
+Source: https://ggbot.itch.io/glitch-goblin-font
+License: SIL Open Font License, Version 1.1
+Usage Notes: Used for glitch-themed UI text and titles.
+
+## Shader / Visual Effects
+
+Digital Glitch Shader
+Author: Orix Studio
+Source: https://orix-studio.itch.io/digital-glitch
+License / Usage Notes: The itch.io page says a read.me file is attached to the shader files and explains how to use it. Check the included read.me file for exact license and usage terms before final submission.
+
+## Visual UI
+
+SHADOW Series - Pixel Game UI
+Author: Escape Pixell / escape-pixel
+Source: https://escape-pixel.itch.io/shadow-series-pixel-game-ui
+License / Usage Notes: The author states that the bundle can be used in commercial projects and modified as needed. Credit is appreciated but not required.
+
+====================
+GENERATED / CUSTOM ASSETS
+=========================
+
+## Additional Background / Concept Art
+
+Some visual concepts and/or background art may have been generated or assisted using ChatGPT image generation tools, then selected and/or adapted by the team for use in the game.
+
+## Custom Game Design, Level Design and Implementation
+
+All gameplay implementation, level assembly, scene composition, balancing, integration and final build work were created by the team during the Game Jam.
+
+====================
+SPECIAL THANKS
+==============
+
+Thanks to all asset creators who made their work available on itch.io.
+
+Thank you for playing The Glitchrooms.
