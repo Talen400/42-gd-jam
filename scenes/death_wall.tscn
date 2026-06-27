@@ -13,7 +13,7 @@ shader_parameter/glitch_noise_tex = ExtResource("2_mbltr")
 shader_parameter/shake_power = 0.03
 shader_parameter/shake_rate = 0.2
 shader_parameter/shake_speed = 5.0
-shader_parameter/chromatic_aberration = 0.01
+shader_parameter/chromatic_aberration = 0.10000000149012
 
 [node name="death_wall" type="Area2D" unique_id=715483078 groups=["players"]]
 script = ExtResource("1_flqnd")

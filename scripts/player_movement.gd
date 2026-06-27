@@ -1,13 +1,12 @@
 extends CharacterBody2D
 
-
 @export var SPEED = 450.0
 @export var JUMP_VELOCITY = -1200.0
 @export var GRAVITY_SCALE = 3.5 
 @export var JUMP_RELEASE_MULTIPLIER = 0.4
 
 func death() -> void:
-	get_tree().reload_current_scene()
+	get_tree().call_deferred("reload_current_scene")
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
