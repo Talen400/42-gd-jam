@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://fb5rn2gm7nnt" path="res://scenes/flood.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://du2g430hqsqag" path="res://scenes/player.tscn" id="2_rwgxs"]
-[ext_resource type="PackedScene" uid="uid://dfim6n1m6qciq" path="res://scenes/death_wall.tscn" id="3_4wyf3"]
+[ext_resource type="PackedScene" path="res://scenes/death_wall.tscn" id="3_4wyf3"]
 
 [node name="World" type="Node2D" unique_id=695999303]
 
@@ -82,3 +82,9 @@ position = Vector2(644, -4)
 
 [node name="Flood6" parent="Flood12/Flood6" unique_id=636494989 instance=ExtResource("1_nnsk1")]
 position = Vector2(773, -3)
+
+[node name="Flood13" parent="." unique_id=947053081 instance=ExtResource("1_nnsk1")]
+position = Vector2(1049, 139)
+
+[node name="Flood14" parent="." unique_id=1319312615 instance=ExtResource("1_nnsk1")]
+position = Vector2(1618, 295)
