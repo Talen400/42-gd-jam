@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cxhru0jqmtjfx"]
+
+[ext_resource type="Script" uid="uid://2fu86ittke7j" path="res://scripts/glitch_rift.gd" id="1_eaou7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n0q7d"]
+
+[node name="GlitchRift" type="Area2D" unique_id=1126284514]
+script = ExtResource("1_eaou7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1535143596]
+shape = SubResource("RectangleShape2D_n0q7d")

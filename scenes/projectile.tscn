@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://84dpwvs2yltc"]
+
+[sub_resource type="GDScript" id="GDScript_6aapk"]
+script/source = "extends Area2D
+
+var obs_type := \"projectile\"
+var obs_width := 20.0
+var obs_height := 10.0
+
+func _process(_delta):
+	queue_redraw()
+
+func _draw():
+	# Parâmetros de animação
+	var time = Time.get_ticks_msec() * 0.001
+	var pulse = abs(sin(time * 8.0)) * 0.5 + 0.5   # pulso entre 0.5 e 1.0
+	var flicker = 1.0 if randf() > 0.2 else 0.3     # flicker ocasional de \"glitch\"
+
+	# Cores base (ciano ↔ magenta alternado)
+	var color1 = Color(\"#00ffff\") if sin(time * 12.0) > 0 else Color(\"#ff00ff\")
+	var color2 = Color(\"#ff00ff\") if sin(time * 12.0) > 0 else Color(\"#00ffff\")
+	color1.a = flicker
+	color2.a = flicker
+
+	# --- 1. Rastro (afterimages) ---
+	# Desenha 5 cópias translúcidas atrás do projétil, cada vez mais desbotadas e deslocadas
+	for i in range(1, 6):
+		var alpha = 0.3 - i * 0.05
+		var offset_x = -i * 6.0
+		draw_rect(Rect2(-obs_width/2 + offset_x, -obs_height/2, obs_width, obs_height),
+				  Color(color1.r, color1.g, color1.b, alpha * flicker))
+
+	# --- 2. Corpo principal (forma de lança) ---
+	# Em vez de um retângulo, desenhamos um polígono pontiagudo
+	var left = -obs_width/2
+	var right = obs_width/2
+	var top = -obs_height/2
+	var bottom = obs_height/2
+	
+	var points = PackedVector2Array([
+		Vector2(left, 0),           # ponta esquerda
+		Vector2(left + 8, top),     # bisel superior
+		Vector2(right - 4, top + 2),
+		Vector2(right, 0),          # ponta direita (mais aguda)
+		Vector2(right - 4, bottom - 2),
+		Vector2(left + 8, bottom),  # bisel inferior
+	])
+	
+	# Preenche com a cor principal
+	draw_colored_polygon(points, color1)
+	# Contorno mais escuro para definição
+	draw_polyline(points, Color(0, 0, 0, 0.5), 1.0)
+
+	# --- 3. Núcleo brilhante (linha central) ---
+	var core_width = obs_width * 0.6 * pulse
+	draw_rect(Rect2(-core_width/2, -2, core_width, 4), Color.WHITE * flicker)
+
+	# --- 4. Glow externo (halo semi‑transparente) ---
+	# Desenhamos um retângulo maior atrás, com alpha baixo, para simular glow
+	draw_rect(Rect2(-obs_width/2 - 4, -obs_height/2 - 4, obs_width + 8, obs_height + 8),
+			  Color(color2.r, color2.g, color2.b, 0.15 * flicker))
+	
+	# --- 5. Partículas estáticas (pequenos pontos ao redor) ---
+	# Simples pontos aleatórios que não precisam de Particles2D
+	#seed(42) # fixa o padrão para não piscar demais
+	#for i in 6:
+	#	var px = randf_range(-obs_width/2 - 6, obs_width/2 + 6)
+	#	var py = randf_range(-obs_height/2 - 4, obs_height/2 + 4)
+	#	draw_circle(Vector2(px, py), 1.5, Color.WHITE * (0.4 * flicker))
+"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3m7n"]
+
+[node name="Projectile" type="Area2D" unique_id=1774109050]
+script = SubResource("GDScript_6aapk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1144425098]
+shape = SubResource("RectangleShape2D_q3m7n")

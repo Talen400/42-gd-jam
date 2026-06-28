@@ -1,18 +1,18 @@
-[gd_scene format=3 uid="uid://du2g430hqsqag"]
+[gd_scene format=3 uid="uid://cwrpiyt3gbrgr"]
 
-[ext_resource type="Texture2D" uid="uid://ljgammoqfq2h" path="res://icon.svg" id="1_3vyb7"]
-[ext_resource type="Script" uid="uid://cbjtk8f5637fc" path="res://scripts/player_movement.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://cq6tsgc2pkvuy" path="res://scripts/player.gd" id="1"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g2els"]
-size = Vector2(128, 128)
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(30, 40)
 
-[node name="Player" type="CharacterBody2D" unique_id=203130167 groups=["players"]]
-script = ExtResource("1_g2els")
+[node name="Player" type="CharacterBody2D" unique_id=1586240915]
+position = Vector2(165, 320)
+script = ExtResource("1")
 
-[node name="Sprite" type="Sprite2D" parent="." unique_id=1061511567]
-texture = ExtResource("1_3vyb7")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1412170035]
+position = Vector2(0, -20)
+shape = SubResource("1")
 
-[node name="Collision" type="CollisionShape2D" parent="." unique_id=1002783087]
-shape = SubResource("RectangleShape2D_g2els")
+[node name="JumpSound" type="AudioStreamPlayer" parent="." unique_id=471545641]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=160644224]
+[node name="NoClipSound" type="AudioStreamPlayer" parent="." unique_id=356707805]

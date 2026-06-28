@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://x2h62a2c2kcj"]
+
+[ext_resource type="Script" uid="uid://c0vesdunbumdg" path="res://scripts/shockwave.gd" id="1_fafld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_238uk"]
+
+[node name="Shockwave" type="Area2D" unique_id=193152166]
+script = ExtResource("1_fafld")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1449513224]
+shape = SubResource("RectangleShape2D_238uk")

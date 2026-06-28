@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://eipkodg5adsq"]
+
+[ext_resource type="Script" uid="uid://c5mromtoirama" path="res://scripts/tendril.gd" id="1_qa2yd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h2u6k"]
+
+[node name="Tendril" type="Area2D" unique_id=1168491685]
+script = ExtResource("1_qa2yd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1400072309]
+shape = SubResource("RectangleShape2D_h2u6k")
